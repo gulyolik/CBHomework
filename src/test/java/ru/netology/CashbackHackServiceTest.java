@@ -60,4 +60,9 @@ class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
         Assert.assertEquals(service.remain(0),1000);
     }
+    @Test
+    public void shouldCheckMax(){
+        CashbackHackService service = new CashbackHackService();
+        Assert.assertEquals(service.remain(1000),0);
+    }
 }
